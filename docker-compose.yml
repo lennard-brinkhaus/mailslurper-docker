@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  app:
+    build:
+      dockerfile: Dockerfile
+      context: ./
+    restart: always
+    ports:
+      - 25:25
+      - 8080:8080
+      - 8085:8085
